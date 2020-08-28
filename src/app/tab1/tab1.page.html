@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> Tab 1 </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,6 +10,15 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <ion-button color="primary" routerLink="child">Open Child Page</ion-button>
+  <p>Stateful: {{ counter }}</p>
+  <ion-button color="tertiary" (click)="counter = counter + 1">
+    Increment
+  </ion-button>
+  <ion-button color="primary" routerLink="/home" routerDirection="root">
+    Back To Home
+  </ion-button>
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>

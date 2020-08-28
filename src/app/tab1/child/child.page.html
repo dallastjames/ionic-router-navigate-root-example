@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>child</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p>Stateful: {{ counter }}</p>
+  <ion-button color="tertiary" (click)="counter = counter + 1">
+    Increment
+  </ion-button>
+  <ion-button color="primary" (click)="backToHome()"> Back To Home </ion-button>
+</ion-content>
